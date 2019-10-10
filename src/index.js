@@ -8,6 +8,8 @@ import App from './App';
 import reset from './constants/css/reset';
 import theme from './theme';
 
+import('./registerServiceWorker');
+
 const GlobalStyle = createGlobalStyle`${reset}`;
 
 ReactDOM.render(

@@ -4,8 +4,8 @@ const webpackMerge = require('webpack-merge');
 const common = require('./config/webpack/webpack.common.babel');
 
 const envs = {
-    development: 'dev',
-    production: 'prod'
+  development: 'dev',
+  production: 'prod'
 };
 
 /* eslint-disable global-require,import/no-dynamic-require */
