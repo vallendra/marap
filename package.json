@@ -13,7 +13,8 @@
     "test:cover": "yarn run test --coverage",
     "cypress:open": "cypress open",
     "precommit": "yarn run lint && yarn test",
-    "prepush": "yarn run lint"
+    "prepush": "yarn run lint",
+    "storybook": "start-storybook"
   },
   "keywords": [],
   "author": "Kyky Farly Vallendra",
@@ -32,6 +33,7 @@
     "@babel/preset-react": "^7.6.3",
     "@babel/register": "^7.6.2",
     "@babel/runtime": "^7.6.3",
+    "@storybook/react": "^5.2.3",
     "@testing-library/jest-dom": "^4.1.2",
     "@testing-library/react": "^9.3.0",
     "babel-core": "^7.0.0-bridge.0",
