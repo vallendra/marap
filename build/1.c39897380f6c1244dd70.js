@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{34:function(o,e){"serviceWorker"in navigator?navigator.serviceWorker.register("./service-worker.js").then((function(o){console.log("[SW] registration successfully",o.scope)})).catch((function(o){console.error("[SW] registration failed",o)})):console.log("[SW] not support in your browser!")}}]);
-//# sourceMappingURL=1.c39897380f6c1244dd70.js.map

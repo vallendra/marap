@@ -1,0 +1,47 @@
+{
+  "icons": [
+    {
+      "src": "icon_1024x1024.e36996e479635e2ae6c3603bfd39390a.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_512x512.7fab568a3c2b2c03555e0609bbb2d634.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_384x384.ea1737ae40960351ba748ad22af7109a.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_256x256.90f335f92953ca58b814041274d5fc42.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_192x192.fb13cd0ad0edbee23540182175c4261a.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_128x128.2e9702f4b5f64a66b8964838e6314899.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_96x96.4937d7a915f6e6eb135ad5407ef9c32c.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "name": "MAPAR - My Mantap React App",
+  "short_name": "Mapar",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "Build PWA-ready React Project",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff"
+}

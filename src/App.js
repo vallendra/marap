@@ -16,19 +16,12 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  width: 500px;
-  height: 40%;
 `;
 
 const Title = styled.h1`
-  color: black;
+  color: ${props => props.theme.colors.orange};
   font-size: 2.5rem;
   font-weight: 700;
-`;
-
-const Paragraph = styled.p`
-  color: ${props => props.theme.colors.orange};
-  font-size: 1rem;
 `;
 
 function ProductsInBasket() {
@@ -44,11 +37,8 @@ const App = () => (
           ⚡
         </span>{' '}
         Lorem Ipsum
-      </Title>
-      <Paragraph>
-        The most simple and robust React boilerplate.
         {ProductsInBasket()}
-      </Paragraph>
+      </Title>
     </Wrapper>
   </Container>
 );
