@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useStoreState } from 'easy-peasy';
 
 const Container = styled.div`
   display: flex;
@@ -26,9 +27,14 @@ const Title = styled.h1`
 `;
 
 const Paragraph = styled.p`
-  color: black;
+  color: ${props => props.theme.colors.orange};
   font-size: 1rem;
 `;
+
+function ProductsInBasket() {
+  const count = useStoreState(state => state.basket.productIds.length);
+  return <div>{count} items in basket</div>;
+}
 
 const App = () => (
   <Container>
@@ -39,7 +45,10 @@ const App = () => (
         </span>{' '}
         Lorem Ipsum
       </Title>
-      <Paragraph>The most simple and robust React boilerplate.</Paragraph>
+      <Paragraph>
+        The most simple and robust React boilerplate.
+        {ProductsInBasket()}
+      </Paragraph>
     </Wrapper>
   </Container>
 );
