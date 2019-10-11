@@ -3,6 +3,7 @@ import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { configure, addDecorator, addParameters } from '@storybook/react';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import theme from 'theme';
+import reset from 'constants/css/reset'
 import { withInfo } from '@storybook/addon-info';
 
 
@@ -17,17 +18,7 @@ function loadStories() {
  */
 const Box = ({ children }) => <React.Fragment>{children}</React.Fragment>;
 
-const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-  }
-`;
+const GlobalStyle = createGlobalStyle`${reset}`;
 
 addDecorator(withInfo());
 addDecorator(story => (
