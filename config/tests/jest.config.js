@@ -2,6 +2,7 @@ module.exports = {
   automock: false,
   browser: false,
   bail: false,
+  modulePathIgnorePatterns: ['<rootDir>/src/utils/'],
   collectCoverageFrom: [
     'src/**/*.{js,jsx}',
     '!**/node_modules/**',

@@ -90,10 +90,7 @@
     ],
     "transform": {
       "^.+\\.js$": "babel-jest"
-    },
-    "testPathIgnorePatterns" : [
-      "<rootDir>src/utils/test-utils/" 
-    ]
+    }
   },
   "husky": {
     "hooks": {

@@ -42,7 +42,7 @@ module.exports = {
       description: 'Build PWA-ready React Project',
       theme_color: '#ffffff',
       background_color: '#ffffff',
-      crossorigin: 'null', // can be null, use-credentials or anonymous
+      crossorigin: null, // can be null, use-credentials or anonymous
       ios: {
         'apple-mobile-web-app-title': 'Mapar',
         'apple-mobile-web-app-status-bar-style': 'black'
