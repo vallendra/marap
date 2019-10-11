@@ -13,6 +13,9 @@
             "babel-module": {}
         }
     },
+    "globals": {
+        "cy": true
+    },
     "env": {
         "browser": true,
         "node": true,
