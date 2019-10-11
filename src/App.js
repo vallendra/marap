@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { useStoreState } from 'easy-peasy';
 
-import Button from 'components/button';
+import Button from 'components/Button';
 
 const Container = styled.div`
   display: flex;
