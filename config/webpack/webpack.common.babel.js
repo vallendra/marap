@@ -22,7 +22,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Marap App',
       template: paths.templatePath,
-      favicon: path.resolve('src/images/icons/favicon.ico'),
+      favicon: path.resolve('public/images/icons/favicon.ico'),
       minify: {
         collapseInlineTagWhitespace: true,
         collapseWhitespace: true,
@@ -43,14 +43,27 @@ module.exports = {
       theme_color: '#ffffff',
       background_color: '#ffffff',
       crossorigin: 'use-credentials', // can be null, use-credentials or anonymous
+      ios: {
+        'apple-mobile-web-app-title': 'Mapar',
+        'apple-mobile-web-app-status-bar-style': 'black'
+      },
       icons: [
         {
-          src: path.resolve('src/images/icons/icon.png'),
-          sizes: [96, 128, 192, 256, 384, 512] // multiple sizes
+          src: path.resolve('public/images/icons/icon.png'),
+          sizes: [120, 152, 167, 180, 1024],
+          destination: path.join('icons', 'ios'),
+          ios: true
         },
         {
-          src: path.resolve('src/images/icons/large-icon.png'),
-          size: '1024x1024' // you can also use the specifications pattern
+          src: path.resolve('public/images/icons/large-icon.png'),
+          size: 1024,
+          destination: path.join('icons', 'ios'),
+          ios: 'startup'
+        },
+        {
+          src: path.resolve('public/images/icons/icon.png'),
+          sizes: [36, 48, 72, 96, 144, 192, 512],
+          destination: path.join('icons', 'android')
         }
       ]
     })
