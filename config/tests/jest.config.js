@@ -9,7 +9,7 @@ module.exports = {
   ],
   coverageDirectory: '<rootDir>/coverage',
   globals: {
-    __DEV__: true
+    __DEV__: true,
   },
   moduleFileExtensions: ['js', 'json', 'jsx', 'node'],
   transform: {

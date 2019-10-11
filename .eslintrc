@@ -1,7 +1,7 @@
 {
     "parser": "babel-eslint",
-    "extends": ["airbnb", "prettier", "prettier/react"],
-    "plugins": ["prettier"],
+    "extends": ["airbnb", "prettier", "prettier/react", "plugin:cypress/recommended"],
+    "plugins": ["prettier", "cypress"],
     "parserOptions": {
         "ecmaVersion": 6,
         "ecmaFeatures": {
@@ -13,15 +13,13 @@
             "babel-module": {}
         }
     },
-    "globals": {
-        "cy": true
-    },
     "env": {
         "browser": true,
         "node": true,
         "mocha": true,
         "es6": true,
-        "jest": true
+        "jest": true,
+        "cypress/globals": true
     },
     "rules": {
         "indent": ["error", 2],

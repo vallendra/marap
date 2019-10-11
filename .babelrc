@@ -21,7 +21,7 @@
               "components": "./src/components",
               "theme": "./src/theme",
               "constants": "./src/constants",
-              "underscore": "lodash"
+              "test-utils": "./src/utils/test-utils"
             }
         }]
     ]
