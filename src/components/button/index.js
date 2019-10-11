@@ -19,11 +19,11 @@ const StyledButton = styled.button`
 
 type buttonProps = {
   primary: String,
-  text: String
+  children: String | Node
 };
 
-function Button({ primary, text }: buttonProps) {
-  return <StyledButton primary={primary}>{text}</StyledButton>;
+function Button({ primary, children }: buttonProps) {
+  return <StyledButton primary={primary}>{children}</StyledButton>;
 }
 
 export default Button;

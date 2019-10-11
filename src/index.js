@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import { StoreProvider } from 'easy-peasy';
 import { BrowserRouter } from 'react-router-dom';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import reset from 'constants/css/reset';
+import theme from 'theme';
 import store from './redux/store';
 import App from './App';
-import reset from './constants/css/reset';
-import theme from './theme';
 
 import('./registerServiceWorker');
 
