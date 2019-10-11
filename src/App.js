@@ -40,8 +40,8 @@ const App = () => (
         </span>{' '}
         Lorem Ipsum
       </Title>
-      <Button text={ProductsInBasket()} />
-      <Button primary text="mantapp" />
+      <Button>{ProductsInBasket()}</Button>
+      <Button primary>Mantapp</Button>
     </Wrapper>
   </Container>
 );
