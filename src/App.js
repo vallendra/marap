@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { useStoreState } from 'easy-peasy';
 
+import Button from 'components/button';
+
 const Container = styled.div`
   display: flex;
   align-items: center;
@@ -19,7 +21,7 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.h1`
-  color: ${props => props.theme.colors.orange};
+  color: ${props => props.theme.colors.blue};
   font-size: 2.5rem;
   font-weight: 700;
 `;
@@ -37,8 +39,9 @@ const App = () => (
           ⚡
         </span>{' '}
         Lorem Ipsum
-        {ProductsInBasket()}
       </Title>
+      <Button text={ProductsInBasket()} />
+      <Button primary text="mantapp" />
     </Wrapper>
   </Container>
 );
