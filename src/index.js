@@ -1,27 +1,9 @@
-import React from 'react';
+// @flow
+import * as React from 'react';
 import ReactDOM from 'react-dom';
-import { StoreProvider } from 'easy-peasy';
-import { BrowserRouter } from 'react-router-dom';
-import { createGlobalStyle, ThemeProvider } from 'styled-components';
-import reset from 'constants/css/reset';
-import theme from 'theme';
-import store from './redux/store';
 import App from './App';
 
-import('./registerServiceWorker');
+const rootId: string = 'root';
+const mountElement: HTMLElement | null = document.getElementById(rootId);
 
-const GlobalStyle = createGlobalStyle`${reset}`;
-
-ReactDOM.render(
-  <ThemeProvider theme={theme}>
-    <BrowserRouter>
-      <>
-        <StoreProvider store={store}>
-          <App />
-        </StoreProvider>
-        <GlobalStyle />
-      </>
-    </BrowserRouter>
-  </ThemeProvider>,
-  document.getElementById('root')
-);
+if (mountElement) ReactDOM.render(React.createElement(App), mountElement);

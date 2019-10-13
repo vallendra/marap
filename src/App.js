@@ -1,49 +1,32 @@
-import React from 'react';
-import styled from 'styled-components';
-import { useStoreState } from 'easy-peasy';
+// @flow
+import * as React from 'react';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import { StoreProvider } from 'easy-peasy';
+import MainRouter from 'lib/router';
+import ErrorBoundary from 'lib/error-boundary';
+import theme from 'theme';
+import reset from 'constants/css/reset';
+import store from 'store';
+import router from './router.web';
 
-import Button from 'components/Button';
+import('./registerServiceWorker');
 
-const Container = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-  font-family: 'Open Sans', sans-serif;
-`;
+const GlobalStyled = createGlobalStyle`${reset}`;
 
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-`;
-
-const Title = styled.h1`
-  color: ${props => props.theme.colors.blue};
-  font-size: 2.5rem;
-  font-weight: 700;
-`;
-
-function ProductsInBasket() {
-  const count = useStoreState(state => state.basket.productIds.length);
-  return <div>{count} items in basket</div>;
+/**
+ * @return {React.Node}
+ */
+export default function App(): React.Node {
+  return (
+    <ThemeProvider theme={theme}>
+      <ErrorBoundary>
+        <StoreProvider store={store}>
+          <>
+            <GlobalStyled />
+            <MainRouter routes={router} />
+          </>
+        </StoreProvider>
+      </ErrorBoundary>
+    </ThemeProvider>
+  );
 }
-
-const App = () => (
-  <Container>
-    <Wrapper>
-      <Title>
-        <span role="img" aria-label="Bolt">
-          ⚡
-        </span>{' '}
-        Lorem Ipsum
-      </Title>
-      <Button>{ProductsInBasket()}</Button>
-      <Button primary>Mantapp</Button>
-    </Wrapper>
-  </Container>
-);
-
-export default App;
