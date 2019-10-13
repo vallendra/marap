@@ -4,7 +4,7 @@
   <a href="https://github.com/vallendra/marap"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Urap.JPG/320px-Urap.JPG" alt="Marap" width=128"></a>
 <br>
 <br>
-React Bolt
+MARAP
 </h1>
 
 <p align="center">My Mantep React App.</p>
