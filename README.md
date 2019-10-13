@@ -24,7 +24,7 @@ MARAP
 
 This boilerplate features all the latest tools and practices in the industry.
 
-- ⚛ **React** — 16.7.0-alpha.0 with Hooks
+- ⚛ **React** — 16.10.2 with Hooks
 - ♻ **Easy Peasy** — Vegetarian friendly state for React
 - 🛠 **Babel** — ES6 syntax, Airbnb & React/Recommended config
 - 🚀 **Webpack**  — Hot Reloading, Code Splitting, Optimized Build
