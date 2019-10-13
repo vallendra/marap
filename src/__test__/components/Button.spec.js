@@ -1,7 +1,7 @@
 import React from 'react';
 import { cleanup } from '@testing-library/react';
 import { renderWithThemeProvider } from 'test-utils';
-import Button from './index';
+import Button from 'components/Button';
 
 beforeEach(cleanup);
 
