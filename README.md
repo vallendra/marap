@@ -15,6 +15,7 @@ MARAP
   <a href="https://opensource.org/licenses/MIT">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="License MIT">
   </a>
+  <a href="https://codeclimate.com/github/vallendra/marap/maintainability"><img src="https://api.codeclimate.com/v1/badges/bbf3ede07f5d9e0aa896/maintainability" /></a>
 </p>
 
 <hr />
