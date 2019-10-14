@@ -1,4 +1,3 @@
-
 <h1 align="center">
 <br>
   <a href="https://github.com/vallendra/marap"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Urap.JPG/320px-Urap.JPG" alt="Marap" width=128"></a>
@@ -27,12 +26,12 @@ This boilerplate features all the latest tools and practices in the industry.
 - ⚛ **React** — 16.10.2 with Hooks
 - ♻ **Easy Peasy** — Vegetarian friendly state for React
 - 🛠 **Babel** — ES6 syntax, Airbnb & React/Recommended config
-- 🚀 **Webpack**  — Hot Reloading, Code Splitting, Optimized Build
+- 🚀 **Webpack** — Hot Reloading, Code Splitting, Optimized Build
 - 💅 **CSS** — Styled Components
-- ✅  **Tests** — Jest, React Testing Library & Cypress
-- 💖  **Lint** — ESlint
-- 🐶  **Husky** — Prevent bad commits
-- ⚡  **PWA Ready** — No more dinosaurus
+- ✅ **Tests** — Jest, React Testing Library & Cypress
+- 💖 **Lint** — ESlint
+- 🐶 **Husky** — Prevent bad commits
+- ⚡ **PWA Ready** — No more dinosaurus
 - 🌊 **Flow** - Static Type Checker for JavaScript
 - 📖 **Storybook** - Build bulletproof UI Component Faster
 
@@ -46,7 +45,7 @@ This boilerplate features all the latest tools and practices in the industry.
 ## Commands
 
 - `npm start` - start the dev server
-- `npm run build` - create a production ready build in `dist` folder
+- `npm run build` - create a production ready build in `build` folder
 - `npm run lint` - execute an eslint check
 - `npm run lint:fix` - execute an eslint and fix the errors
 - `npm test` - run all tests
@@ -54,7 +53,8 @@ This boilerplate features all the latest tools and practices in the industry.
 - `npm run test:cover` - coverage mode
 - `npm run cypress:open` - starts cypress
 - `npm run storybook` - starts storybook
--  `npm run flow` - checks any flow errors
+- `npm run flow` - checks any flow errors
+
 ## License
 
 MIT

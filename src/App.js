@@ -3,7 +3,7 @@ import * as React from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { StoreProvider } from 'easy-peasy';
 import MainRouter from 'lib/router';
-import ErrorBoundary from 'lib/error-boundary';
+import ErrorBoundary from 'lib/errorBoundary';
 import theme from 'theme';
 import reset from 'constants/css/reset';
 import store from 'store';
@@ -13,9 +13,6 @@ import('./registerServiceWorker');
 
 const GlobalStyled = createGlobalStyle`${reset}`;
 
-/**
- * @return {React.Node}
- */
 export default function App(): React.Node {
   return (
     <ThemeProvider theme={theme}>

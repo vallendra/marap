@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{34:function(n,e){"serviceWorker"in navigator&&window.addEventListener("load",(function(){navigator.serviceWorker.register("/sw.js")}))}}]);
-//# sourceMappingURL=1.84fa1d7acec6c4031de0.js.map

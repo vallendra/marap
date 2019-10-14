@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { useStoreState } from 'easy-peasy';
+import { useStoreDispatch, useStoreState } from 'easy-peasy';
 
 import Button from 'components/Button';
+import { Link } from 'react-router-dom';
 
 const Container = styled.div`
   display: flex;
@@ -26,24 +27,39 @@ const Title = styled.h1`
   font-weight: 700;
 `;
 
-function ProductsInBasket() {
-  const count = useStoreState(state => state.basket.productIds.length);
+function ProductsInBasket(count) {
   return <div>{count} items in basket</div>;
 }
 
-const App = () => (
-  <Container>
-    <Wrapper>
-      <Title>
-        <span role="img" aria-label="Bolt">
-          ⚡
-        </span>{' '}
-        Lorem Ipsum
-      </Title>
-      <Button>{ProductsInBasket()}</Button>
-      <Button primary>Mantapp</Button>
-    </Wrapper>
-  </Container>
-);
+const App = () => {
+  const dispatch = useStoreDispatch();
+
+  const {
+    Articles: stateArticles,
+    basket: stateBasket
+  } = useStoreState(globalState => globalState);
+
+  React.useEffect(() => {
+    dispatch.Articles.getArticles();
+  },[dispatch.Articles]);
+
+  return (
+    <Container>
+      <Wrapper>
+        <Title>
+          <span role="img" aria-label="Bolt">
+            ⚡
+          </span>{' '}
+          Lorem Ipsum
+          {console.log(stateArticles.items)}
+        </Title>
+        <Button>{ProductsInBasket(stateBasket.productIds)}</Button>
+        <Link to="/example">
+          <Button primary>ke Halaman Example</Button>
+        </Link>
+      </Wrapper>
+    </Container>
+  );
+};
 
 export default App;
