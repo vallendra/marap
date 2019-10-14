@@ -53,7 +53,8 @@ This boilerplate features all the latest tools and practices in the industry.
 - `npm run test:watch` - run all tests in watch mode
 - `npm run test:cover` - coverage mode
 - `npm run cypress:open` - starts cypress
-
+- `npm run storybook` - starts storybook
+-  `npm run flow` - checks any flow errors
 ## License
 
 MIT
