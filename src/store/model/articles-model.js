@@ -9,9 +9,8 @@ const Articles = {
   }),
 
   getArticles: thunk(async actions => {
-    const articles = await httpHandler.getRequest(
-      'https://news.ralali.com/wp-json/wp/v2/posts'
-    );
+    const articlesPath = 'https://news.ralali.com/wp-json/wp/v2/posts';
+    const articles = await httpHandler().get(articlesPath);
     actions.fetchAction(articles);
   })
 };

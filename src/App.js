@@ -2,8 +2,8 @@
 import * as React from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { StoreProvider } from 'easy-peasy';
-import MainRouter from 'lib/router';
-import ErrorBoundary from 'lib/errorBoundary';
+import MainRouter from 'utils/router';
+import ErrorBoundary from 'utils/error-boundary';
 import theme from 'theme';
 import reset from 'constants/css/reset';
 import store from 'store';

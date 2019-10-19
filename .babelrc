@@ -21,7 +21,6 @@
               "components": "./src/components",
               "theme": "./src/theme",
               "constants": "./src/constants",
-              "test-utils": "./src/utils/test-utils",
               "lib": "./src/lib",
               "store": "./src/store",
               "api/controllers": "./src/api/controllers"
