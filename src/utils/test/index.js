@@ -1,7 +1,7 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { render } from '@testing-library/react';
-import theme from 'theme';
+import theme from 'constants/theme';
 
 export function renderWithThemeProvider(Component) {
   return render(<ThemeProvider theme={theme}>{Component}</ThemeProvider>);

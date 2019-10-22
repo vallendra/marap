@@ -19,7 +19,6 @@
             "root": ["./src"],
             "alias": {
               "components": "./src/components",
-              "theme": "./src/theme",
               "constants": "./src/constants",
               "lib": "./src/lib",
               "store": "./src/store",

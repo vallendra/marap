@@ -4,7 +4,7 @@ import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { StoreProvider } from 'easy-peasy';
 import MainRouter from 'utils/router';
 import ErrorBoundary from 'utils/error-boundary';
-import theme from 'theme';
+import theme from 'constants/theme';
 import reset from 'constants/css/reset';
 import store from 'store';
 import router from './router.web';
