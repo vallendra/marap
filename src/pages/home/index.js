@@ -5,6 +5,8 @@ import { useStoreDispatch, useStoreState } from 'easy-peasy';
 import Button from 'components/Button';
 import { Link } from 'react-router-dom';
 
+import Language from 'utils/language';
+
 const Container = styled.div`
   display: flex;
   align-items: center;
@@ -43,6 +45,8 @@ const App = () => {
     dispatch.Articles.getArticles();
   },[dispatch.Articles]);
 
+  const { translate } = Language();
+
   return (
     <Container>
       <Wrapper>
@@ -50,7 +54,7 @@ const App = () => {
           <span role="img" aria-label="Bolt">
             ⚡
           </span>{' '}
-          Lorem Ipsum
+          {translate('WELCOME')}
           {console.log(stateArticles.items)}
         </Title>
         <Button>{ProductsInBasket(stateBasket.productIds)}</Button>
